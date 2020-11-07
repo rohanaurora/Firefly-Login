@@ -15,7 +15,7 @@ class HomeVC: UIViewController {
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     
-    var currentUser = User.shared
+    var currentUser = UserStore.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,10 +23,13 @@ class HomeVC: UIViewController {
         passwordTF.isSecureTextEntry = true
         passwordTF.addTarget(passwordTF, action: #selector(resignFirstResponder), for: .editingDidEndOnExit)
     }
-
+    
     @IBAction func loginTapped(_ sender: Any) {
-        currentUser.login(usernameTF.text ?? "", passwordTF.text ?? "")
-        processLogin()
+        currentUser.login(usernameTF.text ?? "", passwordTF.text ?? "", handler: {
+            DispatchQueue.main.async { [weak self] in
+                self?.processLogin()
+            }
+        })
     }
     
     private func processLogin() {

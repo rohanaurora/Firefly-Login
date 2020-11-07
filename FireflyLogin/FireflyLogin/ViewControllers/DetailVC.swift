@@ -15,6 +15,6 @@ class DetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        usernameLabel.text = User.shared.username
+        usernameLabel.text = UserStore.shared.username
     }
 }

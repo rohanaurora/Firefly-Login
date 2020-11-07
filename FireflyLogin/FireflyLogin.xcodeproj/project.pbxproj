@@ -14,11 +14,14 @@
 		BDD601622555392F007B1724 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDD601612555392F007B1724 /* Assets.xcassets */; };
 		BDD601652555392F007B1724 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD601632555392F007B1724 /* LaunchScreen.storyboard */; };
 		BDD601702555392F007B1724 /* FireflyLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6016F2555392F007B1724 /* FireflyLoginTests.swift */; };
-		BDD6017B25554812007B1724 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6017A25554812007B1724 /* User.swift */; };
+		BDD6017B25554812007B1724 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6017A25554812007B1724 /* UserStore.swift */; };
 		BDD6017D25554B43007B1724 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6017C25554B43007B1724 /* DetailVC.swift */; };
 		BDD6017F25554BB9007B1724 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6017E25554BB9007B1724 /* Constants.swift */; };
 		BDD6018125555207007B1724 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6018025555207007B1724 /* UIViewController.swift */; };
 		BDD60187255560F9007B1724 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD60186255560F9007B1724 /* String.swift */; };
+		BDD6019225569FFC007B1724 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6019125569FFC007B1724 /* User.swift */; };
+		BDD601942556A0ED007B1724 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD601932556A0ED007B1724 /* NetworkClient.swift */; };
+		BDD601982556C48A007B1724 /* userResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = BDD601972556C48A007B1724 /* userResponse.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,11 +46,14 @@
 		BDD6016B2555392F007B1724 /* FireflyLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireflyLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD6016F2555392F007B1724 /* FireflyLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireflyLoginTests.swift; sourceTree = "<group>"; };
 		BDD601712555392F007B1724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BDD6017A25554812007B1724 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BDD6017A25554812007B1724 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		BDD6017C25554B43007B1724 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		BDD6017E25554BB9007B1724 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BDD6018025555207007B1724 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		BDD60186255560F9007B1724 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		BDD6019125569FFC007B1724 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BDD601932556A0ED007B1724 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		BDD601972556C48A007B1724 /* userResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = userResponse.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,7 @@
 				BDD601582555392B007B1724 /* AppDelegate.swift */,
 				BDD6015A2555392B007B1724 /* SceneDelegate.swift */,
 				BDD6015E2555392B007B1724 /* Main.storyboard */,
+				BDD601972556C48A007B1724 /* userResponse.json */,
 				BDD6019025556F15007B1724 /* Networking */,
 				BDD6018325555B87007B1724 /* Utility */,
 				BDD6018525555BA3007B1724 /* Model */,
@@ -142,7 +149,8 @@
 		BDD6018525555BA3007B1724 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BDD6017A25554812007B1724 /* User.swift */,
+				BDD6017A25554812007B1724 /* UserStore.swift */,
+				BDD6019125569FFC007B1724 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -150,6 +158,7 @@
 		BDD6019025556F15007B1724 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				BDD601932556A0ED007B1724 /* NetworkClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -238,6 +247,7 @@
 				BDD601652555392F007B1724 /* LaunchScreen.storyboard in Resources */,
 				BDD601622555392F007B1724 /* Assets.xcassets in Resources */,
 				BDD601602555392B007B1724 /* Main.storyboard in Resources */,
+				BDD601982556C48A007B1724 /* userResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,12 +266,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDD6018125555207007B1724 /* UIViewController.swift in Sources */,
+				BDD601942556A0ED007B1724 /* NetworkClient.swift in Sources */,
 				BDD6017D25554B43007B1724 /* DetailVC.swift in Sources */,
-				BDD6017B25554812007B1724 /* User.swift in Sources */,
+				BDD6017B25554812007B1724 /* UserStore.swift in Sources */,
 				BDD6015D2555392B007B1724 /* HomeVC.swift in Sources */,
 				BDD601592555392B007B1724 /* AppDelegate.swift in Sources */,
 				BDD6015B2555392B007B1724 /* SceneDelegate.swift in Sources */,
 				BDD60187255560F9007B1724 /* String.swift in Sources */,
+				BDD6019225569FFC007B1724 /* User.swift in Sources */,
 				BDD6017F25554BB9007B1724 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

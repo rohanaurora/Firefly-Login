@@ -17,3 +17,8 @@ struct AlertText {
 struct LoginText {
     static let title = "Welcome to FireFly!"
 }
+
+struct Links {
+    static let mockURL = "https://gist.githubusercontent.com/rohanaurora/f51ff84e485fc0af04bd6ed530dcf22f/raw/c1dde6477524e20c99748268d05a73a98d1803cf/user.json"
+    static let ffLogin = "https://fireflysoftware.ca/login"
+}
