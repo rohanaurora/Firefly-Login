@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		BDD601592555392B007B1724 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD601582555392B007B1724 /* AppDelegate.swift */; };
 		BDD6015B2555392B007B1724 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6015A2555392B007B1724 /* SceneDelegate.swift */; };
-		BDD6015D2555392B007B1724 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6015C2555392B007B1724 /* ViewController.swift */; };
+		BDD6015D2555392B007B1724 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6015C2555392B007B1724 /* HomeVC.swift */; };
 		BDD601602555392B007B1724 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD6015E2555392B007B1724 /* Main.storyboard */; };
 		BDD601622555392F007B1724 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDD601612555392F007B1724 /* Assets.xcassets */; };
 		BDD601652555392F007B1724 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD601632555392F007B1724 /* LaunchScreen.storyboard */; };
 		BDD601702555392F007B1724 /* FireflyLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6016F2555392F007B1724 /* FireflyLoginTests.swift */; };
+		BDD6017B25554812007B1724 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6017A25554812007B1724 /* User.swift */; };
+		BDD6017D25554B43007B1724 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6017C25554B43007B1724 /* DetailVC.swift */; };
+		BDD6017F25554BB9007B1724 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6017E25554BB9007B1724 /* Constants.swift */; };
+		BDD6018125555207007B1724 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6018025555207007B1724 /* UIViewController.swift */; };
+		BDD60187255560F9007B1724 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD60186255560F9007B1724 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +35,7 @@
 		BDD601552555392B007B1724 /* FireflyLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireflyLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD601582555392B007B1724 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDD6015A2555392B007B1724 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BDD6015C2555392B007B1724 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDD6015C2555392B007B1724 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		BDD6015F2555392B007B1724 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BDD601612555392F007B1724 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDD601642555392F007B1724 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +43,11 @@
 		BDD6016B2555392F007B1724 /* FireflyLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireflyLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD6016F2555392F007B1724 /* FireflyLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireflyLoginTests.swift; sourceTree = "<group>"; };
 		BDD601712555392F007B1724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDD6017A25554812007B1724 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BDD6017C25554B43007B1724 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		BDD6017E25554BB9007B1724 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BDD6018025555207007B1724 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		BDD60186255560F9007B1724 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +91,12 @@
 			children = (
 				BDD601582555392B007B1724 /* AppDelegate.swift */,
 				BDD6015A2555392B007B1724 /* SceneDelegate.swift */,
-				BDD6015C2555392B007B1724 /* ViewController.swift */,
 				BDD6015E2555392B007B1724 /* Main.storyboard */,
+				BDD6019025556F15007B1724 /* Networking */,
+				BDD6018325555B87007B1724 /* Utility */,
+				BDD6018525555BA3007B1724 /* Model */,
+				BDD6018425555B99007B1724 /* ViewControllers */,
+				BDD6018225555B7D007B1724 /* Extensions */,
 				BDD601612555392F007B1724 /* Assets.xcassets */,
 				BDD601632555392F007B1724 /* LaunchScreen.storyboard */,
 				BDD601662555392F007B1724 /* Info.plist */,
@@ -97,6 +111,47 @@
 				BDD601712555392F007B1724 /* Info.plist */,
 			);
 			path = FireflyLoginTests;
+			sourceTree = "<group>";
+		};
+		BDD6018225555B7D007B1724 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BDD6018025555207007B1724 /* UIViewController.swift */,
+				BDD60186255560F9007B1724 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BDD6018325555B87007B1724 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				BDD6017E25554BB9007B1724 /* Constants.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		BDD6018425555B99007B1724 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BDD6015C2555392B007B1724 /* HomeVC.swift */,
+				BDD6017C25554B43007B1724 /* DetailVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BDD6018525555BA3007B1724 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BDD6017A25554812007B1724 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BDD6019025556F15007B1724 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +255,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDD6015D2555392B007B1724 /* ViewController.swift in Sources */,
+				BDD6018125555207007B1724 /* UIViewController.swift in Sources */,
+				BDD6017D25554B43007B1724 /* DetailVC.swift in Sources */,
+				BDD6017B25554812007B1724 /* User.swift in Sources */,
+				BDD6015D2555392B007B1724 /* HomeVC.swift in Sources */,
 				BDD601592555392B007B1724 /* AppDelegate.swift in Sources */,
 				BDD6015B2555392B007B1724 /* SceneDelegate.swift in Sources */,
+				BDD60187255560F9007B1724 /* String.swift in Sources */,
+				BDD6017F25554BB9007B1724 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
