@@ -21,7 +21,9 @@
 		BDD60187255560F9007B1724 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD60186255560F9007B1724 /* String.swift */; };
 		BDD6019225569FFC007B1724 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6019125569FFC007B1724 /* User.swift */; };
 		BDD601942556A0ED007B1724 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD601932556A0ED007B1724 /* NetworkClient.swift */; };
-		BDD601982556C48A007B1724 /* userResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = BDD601972556C48A007B1724 /* userResponse.json */; };
+		BDD6019A2556C5EC007B1724 /* NetworkClient+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD601992556C5EC007B1724 /* NetworkClient+Mock.swift */; };
+		BDD6019C2556C78E007B1724 /* LoginMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6019B2556C78E007B1724 /* LoginMockTests.swift */; };
+		BDD6019E2556CB31007B1724 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = BDD6019D2556CB31007B1724 /* User.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +55,9 @@
 		BDD60186255560F9007B1724 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		BDD6019125569FFC007B1724 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BDD601932556A0ED007B1724 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
-		BDD601972556C48A007B1724 /* userResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = userResponse.json; sourceTree = "<group>"; };
+		BDD601992556C5EC007B1724 /* NetworkClient+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkClient+Mock.swift"; sourceTree = "<group>"; };
+		BDD6019B2556C78E007B1724 /* LoginMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMockTests.swift; sourceTree = "<group>"; };
+		BDD6019D2556CB31007B1724 /* User.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,6 @@
 				BDD601582555392B007B1724 /* AppDelegate.swift */,
 				BDD6015A2555392B007B1724 /* SceneDelegate.swift */,
 				BDD6015E2555392B007B1724 /* Main.storyboard */,
-				BDD601972556C48A007B1724 /* userResponse.json */,
 				BDD6019025556F15007B1724 /* Networking */,
 				BDD6018325555B87007B1724 /* Utility */,
 				BDD6018525555BA3007B1724 /* Model */,
@@ -107,6 +110,7 @@
 				BDD601612555392F007B1724 /* Assets.xcassets */,
 				BDD601632555392F007B1724 /* LaunchScreen.storyboard */,
 				BDD601662555392F007B1724 /* Info.plist */,
+				BDD6019D2556CB31007B1724 /* User.json */,
 			);
 			path = FireflyLogin;
 			sourceTree = "<group>";
@@ -114,6 +118,7 @@
 		BDD6016E2555392F007B1724 /* FireflyLoginTests */ = {
 			isa = PBXGroup;
 			children = (
+				BDD6019B2556C78E007B1724 /* LoginMockTests.swift */,
 				BDD6016F2555392F007B1724 /* FireflyLoginTests.swift */,
 				BDD601712555392F007B1724 /* Info.plist */,
 			);
@@ -159,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				BDD601932556A0ED007B1724 /* NetworkClient.swift */,
+				BDD601992556C5EC007B1724 /* NetworkClient+Mock.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -245,9 +251,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDD601652555392F007B1724 /* LaunchScreen.storyboard in Resources */,
+				BDD6019E2556CB31007B1724 /* User.json in Resources */,
 				BDD601622555392F007B1724 /* Assets.xcassets in Resources */,
 				BDD601602555392B007B1724 /* Main.storyboard in Resources */,
-				BDD601982556C48A007B1724 /* userResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +280,7 @@
 				BDD6015B2555392B007B1724 /* SceneDelegate.swift in Sources */,
 				BDD60187255560F9007B1724 /* String.swift in Sources */,
 				BDD6019225569FFC007B1724 /* User.swift in Sources */,
+				BDD6019A2556C5EC007B1724 /* NetworkClient+Mock.swift in Sources */,
 				BDD6017F25554BB9007B1724 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDD601702555392F007B1724 /* FireflyLoginTests.swift in Sources */,
+				BDD6019C2556C78E007B1724 /* LoginMockTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

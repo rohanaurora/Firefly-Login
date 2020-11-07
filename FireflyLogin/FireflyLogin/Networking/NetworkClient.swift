@@ -10,8 +10,14 @@ import Foundation
 
 class NetworkClient {
     
-    func requestLogin(url: URL, completion: @escaping  (_ result: Result?, _ errorMessage: String?) -> Void) {
-        let dataTask = URLSession.shared.dataTask(with: url) { (data,response, error) in
+    private var session: URLSessionProtocol
+
+    init(withSession session: URLSessionProtocol = URLSession.shared) {
+        self.session = session
+    }
+    
+    public func requestLogin(url: URL, completion: @escaping  (_ result: Result?, _ errorMessage: String?) -> Void) {
+        let dataTask = session.dataTask(with: url) { (data, response, error) in
             guard let statusCode = (response as? HTTPURLResponse)?.statusCode else {
                 return
             }
