@@ -38,10 +38,9 @@ extension User: CustomDebugStringConvertible {
     }
 }
 
-// JSON response
-//https://gist.githubusercontent.com/rohanaurora/f51ff84e485fc0af04bd6ed530dcf22f/raw/c1dde6477524e20c99748268d05a73a98d1803cf/user.json
 
 /*
+ 
 {
   "user": {
     "username": "test123",

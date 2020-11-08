@@ -14,7 +14,7 @@ extension UIViewController {
         static var alert: UIAlertController = UIAlertController()
     }
     
-    func showAlert(title: String? = "", message:String? = "", buttonTitle: String = "OK", handler: ((UIAlertAction) -> Swift.Void)? = nil) {
+    func showAlert(title: String? = "", message:String? = "", buttonTitle: String = AlertText.ok, handler: ((UIAlertAction) -> Swift.Void)? = nil) {
         Alert.alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: buttonTitle, style: .default, handler: handler)
         Alert.alert.addAction(action)

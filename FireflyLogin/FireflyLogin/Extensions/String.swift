@@ -11,7 +11,7 @@ import UIKit
 extension String {
     
     var hasLetterAndNumber : Bool {
-      let regex = "([A-Za-z]).([0-9])"
+      let regex = "([A-Za-z])([0-9])|([0-9])([A-Za-z])"
       return matches(regex)
     }
     

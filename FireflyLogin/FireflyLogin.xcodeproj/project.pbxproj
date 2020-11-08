@@ -13,7 +13,6 @@
 		BDD601602555392B007B1724 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD6015E2555392B007B1724 /* Main.storyboard */; };
 		BDD601622555392F007B1724 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDD601612555392F007B1724 /* Assets.xcassets */; };
 		BDD601652555392F007B1724 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD601632555392F007B1724 /* LaunchScreen.storyboard */; };
-		BDD601702555392F007B1724 /* FireflyLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6016F2555392F007B1724 /* FireflyLoginTests.swift */; };
 		BDD6017B25554812007B1724 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6017A25554812007B1724 /* UserStore.swift */; };
 		BDD6017D25554B43007B1724 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6017C25554B43007B1724 /* DetailVC.swift */; };
 		BDD6017F25554BB9007B1724 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6017E25554BB9007B1724 /* Constants.swift */; };
@@ -24,6 +23,7 @@
 		BDD6019A2556C5EC007B1724 /* NetworkClient+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD601992556C5EC007B1724 /* NetworkClient+Mock.swift */; };
 		BDD6019C2556C78E007B1724 /* LoginMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6019B2556C78E007B1724 /* LoginMockTests.swift */; };
 		BDD6019E2556CB31007B1724 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = BDD6019D2556CB31007B1724 /* User.json */; };
+		BDD601A525574334007B1724 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD601A425574334007B1724 /* StringTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,6 @@
 		BDD601642555392F007B1724 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDD601662555392F007B1724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDD6016B2555392F007B1724 /* FireflyLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireflyLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDD6016F2555392F007B1724 /* FireflyLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireflyLoginTests.swift; sourceTree = "<group>"; };
 		BDD601712555392F007B1724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDD6017A25554812007B1724 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		BDD6017C25554B43007B1724 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
@@ -58,6 +57,7 @@
 		BDD601992556C5EC007B1724 /* NetworkClient+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkClient+Mock.swift"; sourceTree = "<group>"; };
 		BDD6019B2556C78E007B1724 /* LoginMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMockTests.swift; sourceTree = "<group>"; };
 		BDD6019D2556CB31007B1724 /* User.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
+		BDD601A425574334007B1724 /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,15 +102,15 @@
 				BDD601582555392B007B1724 /* AppDelegate.swift */,
 				BDD6015A2555392B007B1724 /* SceneDelegate.swift */,
 				BDD6015E2555392B007B1724 /* Main.storyboard */,
+				BDD6018525555BA3007B1724 /* Model */,
+				BDD601A025572893007B1724 /* ViewModel */,
+				BDD6018425555B99007B1724 /* ViewControllers */,
 				BDD6019025556F15007B1724 /* Networking */,
 				BDD6018325555B87007B1724 /* Utility */,
-				BDD6018525555BA3007B1724 /* Model */,
-				BDD6018425555B99007B1724 /* ViewControllers */,
 				BDD6018225555B7D007B1724 /* Extensions */,
 				BDD601612555392F007B1724 /* Assets.xcassets */,
 				BDD601632555392F007B1724 /* LaunchScreen.storyboard */,
 				BDD601662555392F007B1724 /* Info.plist */,
-				BDD6019D2556CB31007B1724 /* User.json */,
 			);
 			path = FireflyLogin;
 			sourceTree = "<group>";
@@ -118,8 +118,9 @@
 		BDD6016E2555392F007B1724 /* FireflyLoginTests */ = {
 			isa = PBXGroup;
 			children = (
+				BDD6019D2556CB31007B1724 /* User.json */,
 				BDD6019B2556C78E007B1724 /* LoginMockTests.swift */,
-				BDD6016F2555392F007B1724 /* FireflyLoginTests.swift */,
+				BDD601A425574334007B1724 /* StringTests.swift */,
 				BDD601712555392F007B1724 /* Info.plist */,
 			);
 			path = FireflyLoginTests;
@@ -154,7 +155,6 @@
 		BDD6018525555BA3007B1724 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BDD6017A25554812007B1724 /* UserStore.swift */,
 				BDD6019125569FFC007B1724 /* User.swift */,
 			);
 			path = Model;
@@ -167,6 +167,14 @@
 				BDD601992556C5EC007B1724 /* NetworkClient+Mock.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		BDD601A025572893007B1724 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BDD6017A25554812007B1724 /* UserStore.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDD601702555392F007B1724 /* FireflyLoginTests.swift in Sources */,
+				BDD601A525574334007B1724 /* StringTests.swift in Sources */,
 				BDD6019C2556C78E007B1724 /* LoginMockTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

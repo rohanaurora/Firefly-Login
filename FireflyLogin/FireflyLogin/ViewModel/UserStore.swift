@@ -11,9 +11,10 @@ import Foundation
 final class UserStore {
     private init() { }
     static let shared = UserStore()
+
     var username: String = ""
+    var isLoggedIn: Bool = false
     
-    var isLoggedIn : Bool = false
     
     internal func login(_ user: String, _ pass: String, handler: @escaping () -> Void) {
         if !user.isEmpty && !pass.isEmpty && user.hasLetterAndNumber && pass.hasLetterAndNumber  {
