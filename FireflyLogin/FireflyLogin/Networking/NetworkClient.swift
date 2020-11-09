@@ -11,12 +11,12 @@ import Foundation
 class NetworkClient {
     
     private var session: URLSessionProtocol
-
+    
     init(withSession session: URLSessionProtocol = URLSession.shared) {
         self.session = session
     }
     
-    public func requestLogin(url: URL, completion: @escaping  (_ result: Result?, _ errorMessage: String?) -> Void) {
+    public func requestLogin(url: URL, completion: @escaping  (_ result: User?, _ errorMessage: String?) -> Void) {
         let dataTask = session.dataTask(with: url) { (data, response, error) in
             guard let statusCode = (response as? HTTPURLResponse)?.statusCode else {
                 return
@@ -27,7 +27,7 @@ class NetworkClient {
             }
             switch statusCode {
             case 200:
-                let userStore = try! JSONDecoder().decode(Result.self, from: data)
+                let userStore = try! JSONDecoder().decode(User.self, from: data)
                 completion(userStore, nil)
             case 404:
                 completion(nil, "Bad Url")
@@ -37,5 +37,4 @@ class NetworkClient {
         }
         dataTask.resume()
     }
-    
 }

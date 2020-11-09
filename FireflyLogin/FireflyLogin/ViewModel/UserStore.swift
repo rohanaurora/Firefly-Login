@@ -6,47 +6,30 @@
 //  Copyright © 2020 Rohan Aurora. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 final class UserStore {
     private init() { }
     static let shared = UserStore()
-
+    
     var username: String = ""
     var isLoggedIn: Bool = false
     
-    
-    func login(_ user: String, _ pass: String, handler: @escaping () -> Void) {
-        if !user.isEmpty && !pass.isEmpty && user.hasLetterAndNumber && pass.hasLetterAndNumber  {
-            username = user
-            makeRequest(completion: {
-                handler()
-            })
-        } else {
-            isLoggedIn = false
+    internal func login(_ user: String, _ pass: String, handler: @escaping () -> Void) {
+        validate(for: user, pass: pass)
+        let dm = DataManager()
+        dm.generateMock()
+        dm.makeMockRequest(completion: {
             handler()
-        }
+        })
     }
     
-    private func makeRequest(completion: @escaping () -> Void) {
-        let url = URL(string: Links.mockURL)!
-        let networkClient = NetworkClient()
-        
-        networkClient.requestLogin(url: url) { result, errorMessage  in
-            
-            guard let res = result?.user else { return }
-            print(res.debugDescription)
-            
-            if res.username == UserStore.shared.username {
-                UserStore.shared.isLoggedIn = res.isSuccessful
-            } else {
-                UserStore.shared.isLoggedIn = false
-            }
-            
-            if let e = errorMessage {
-                print(e)
-            }
-            completion()
+    private func validate(for user: String, pass: String) {
+        username = user
+        if !user.isEmpty && !pass.isEmpty && user.hasLetterAndNumber && pass.hasLetterAndNumber  {
+            isLoggedIn = true
+        } else {
+            isLoggedIn = false
         }
     }
 }

@@ -9,7 +9,6 @@
 import XCTest
 @testable import FireflyLogin
 
-
 class StringTests: XCTestCase {
     
     func testContainsNumberAndLetter() {

@@ -22,8 +22,12 @@
 		BDD601942556A0ED007B1724 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD601932556A0ED007B1724 /* NetworkClient.swift */; };
 		BDD6019A2556C5EC007B1724 /* NetworkClient+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD601992556C5EC007B1724 /* NetworkClient+Mock.swift */; };
 		BDD6019C2556C78E007B1724 /* LoginMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6019B2556C78E007B1724 /* LoginMockTests.swift */; };
-		BDD6019E2556CB31007B1724 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = BDD6019D2556CB31007B1724 /* User.json */; };
+		BDD6019E2556CB31007B1724 /* MockUser.json in Resources */ = {isa = PBXBuildFile; fileRef = BDD6019D2556CB31007B1724 /* MockUser.json */; };
 		BDD601A525574334007B1724 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD601A425574334007B1724 /* StringTests.swift */; };
+		BDEC17EE2559579E0081876A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEC17ED2559579E0081876A /* DataManager.swift */; };
+		BDEC17F125595AFB0081876A /* LinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEC17F025595AFB0081876A /* LinkTests.swift */; };
+		BDEC17F325595C520081876A /* UserModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEC17F225595C520081876A /* UserModelTests.swift */; };
+		BDEC17F525595DB60081876A /* MockUserInvalidData.json in Resources */ = {isa = PBXBuildFile; fileRef = BDEC17F425595DB60081876A /* MockUserInvalidData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +60,12 @@
 		BDD601932556A0ED007B1724 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		BDD601992556C5EC007B1724 /* NetworkClient+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkClient+Mock.swift"; sourceTree = "<group>"; };
 		BDD6019B2556C78E007B1724 /* LoginMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMockTests.swift; sourceTree = "<group>"; };
-		BDD6019D2556CB31007B1724 /* User.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
+		BDD6019D2556CB31007B1724 /* MockUser.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockUser.json; sourceTree = "<group>"; };
 		BDD601A425574334007B1724 /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
+		BDEC17ED2559579E0081876A /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		BDEC17F025595AFB0081876A /* LinkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkTests.swift; sourceTree = "<group>"; };
+		BDEC17F225595C520081876A /* UserModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModelTests.swift; sourceTree = "<group>"; };
+		BDEC17F425595DB60081876A /* MockUserInvalidData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockUserInvalidData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +110,7 @@
 				BDD601582555392B007B1724 /* AppDelegate.swift */,
 				BDD6015A2555392B007B1724 /* SceneDelegate.swift */,
 				BDD6015E2555392B007B1724 /* Main.storyboard */,
+				BDEC17EF2559590A0081876A /* Manager */,
 				BDD6018525555BA3007B1724 /* Model */,
 				BDD601A025572893007B1724 /* ViewModel */,
 				BDD6018425555B99007B1724 /* ViewControllers */,
@@ -118,9 +127,12 @@
 		BDD6016E2555392F007B1724 /* FireflyLoginTests */ = {
 			isa = PBXGroup;
 			children = (
-				BDD6019D2556CB31007B1724 /* User.json */,
+				BDD6019D2556CB31007B1724 /* MockUser.json */,
+				BDEC17F425595DB60081876A /* MockUserInvalidData.json */,
 				BDD6019B2556C78E007B1724 /* LoginMockTests.swift */,
+				BDEC17F225595C520081876A /* UserModelTests.swift */,
 				BDD601A425574334007B1724 /* StringTests.swift */,
+				BDEC17F025595AFB0081876A /* LinkTests.swift */,
 				BDD601712555392F007B1724 /* Info.plist */,
 			);
 			path = FireflyLoginTests;
@@ -175,6 +187,14 @@
 				BDD6017A25554812007B1724 /* UserStore.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BDEC17EF2559590A0081876A /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BDEC17ED2559579E0081876A /* DataManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDD601652555392F007B1724 /* LaunchScreen.storyboard in Resources */,
-				BDD6019E2556CB31007B1724 /* User.json in Resources */,
+				BDD6019E2556CB31007B1724 /* MockUser.json in Resources */,
 				BDD601622555392F007B1724 /* Assets.xcassets in Resources */,
 				BDD601602555392B007B1724 /* Main.storyboard in Resources */,
 			);
@@ -269,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDEC17F525595DB60081876A /* MockUserInvalidData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +309,7 @@
 				BDD6015B2555392B007B1724 /* SceneDelegate.swift in Sources */,
 				BDD60187255560F9007B1724 /* String.swift in Sources */,
 				BDD6019225569FFC007B1724 /* User.swift in Sources */,
+				BDEC17EE2559579E0081876A /* DataManager.swift in Sources */,
 				BDD6019A2556C5EC007B1724 /* NetworkClient+Mock.swift in Sources */,
 				BDD6017F25554BB9007B1724 /* Constants.swift in Sources */,
 			);
@@ -298,6 +320,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDD601A525574334007B1724 /* StringTests.swift in Sources */,
+				BDEC17F125595AFB0081876A /* LinkTests.swift in Sources */,
+				BDEC17F325595C520081876A /* UserModelTests.swift in Sources */,
 				BDD6019C2556C78E007B1724 /* LoginMockTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
