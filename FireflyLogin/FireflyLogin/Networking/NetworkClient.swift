@@ -26,7 +26,6 @@ class NetworkClient {
                 return
             }
             switch statusCode {
-                
             case 200:
                 let userStore = try! JSONDecoder().decode(Result.self, from: data)
                 completion(userStore, nil)

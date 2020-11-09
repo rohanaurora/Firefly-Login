@@ -16,7 +16,7 @@ final class UserStore {
     var isLoggedIn: Bool = false
     
     
-    internal func login(_ user: String, _ pass: String, handler: @escaping () -> Void) {
+    func login(_ user: String, _ pass: String, handler: @escaping () -> Void) {
         if !user.isEmpty && !pass.isEmpty && user.hasLetterAndNumber && pass.hasLetterAndNumber  {
             username = user
             makeRequest(completion: {
